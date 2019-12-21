@@ -22,6 +22,15 @@ time.sleep(2.0)
 def index():
 	return render_template("index.html")
 
+@app.route("/device")
+def device():
+	return render_template("device.html")
+
+@app.route("/application")
+def application():
+	return render_template("application.html")
+
+
 if __name__ == '__main__':
 	ap = argparse.ArgumentParser()
 	ap.add_argument("-i", "--ip", type=str, default="0.0.0.0",

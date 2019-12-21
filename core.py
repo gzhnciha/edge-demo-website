@@ -1,6 +1,7 @@
 import device
 import application
 import threading
+import time
 import resource
 import linke_vision_server
 
@@ -22,6 +23,7 @@ class BackendCore:
     def main_loop(self):
         while True:
             print(resource.devices)
+            time.sleep(5.0)
 
     def load_devices(self):
         pass
